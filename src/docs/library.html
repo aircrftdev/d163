@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("../partials/head.html", {
+    "title": "AIRCRFT Library"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("../partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+    @@if (sidebarSize == 'base' || demoMode) {
+    @@include("../partials/sidebar.html", {
+    "category": "",
+    "subcategory": "",
+    "page": "library.html"
+    })
+    }
+    @@if (sidebarSize == 'small' || demoMode) {
+    @@include("../partials/sidebar-sm.html", {
+    "category": "",
+    "subcategory": "",
+    "page": "library.html"
+    })
+    }
+    }
+    @@if (navPosition == 'topnav' || demoMode) {
+    @@include("../partials/topnav.html", {
+    "category": "",
+    "subcategory": "",
+    "page": "library.html"
+    })
+    }
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+
+      @@if (navPosition == 'combo' || demoMode) {
+      @@include("../partials/topbar.html")
+      }
+
+      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+
+            @@include("../partials/library/the-big-leap.html")
+            @@include("../partials/library/the-soul-of-money.html")
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("../partials/scripts.html")
+
+  </body>
+</html>

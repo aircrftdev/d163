@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "title": "AIRCRFT Feed Updated d196"
+    })
+  </head>
+  <body>
+
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+    @@if (sidebarSize == 'base' || demoMode) {
+    @@include("partials/sidebar.html", {
+    "category": "",
+    "subcategory": "",
+    "page": "widgets.html"
+    })
+    }
+    @@if (sidebarSize == 'small' || demoMode) {
+    @@include("partials/sidebar-sm.html", {
+    "category": "",
+    "subcategory": "",
+    "page": "widgets.html"
+    })
+    }
+    }
+    @@if (navPosition == 'topnav' || demoMode) {
+    @@include("partials/topnav.html", {
+    "category": "",
+    "subcategory": "",
+    "page": "widgets.html"
+    })
+    }
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content">
+
+      @@if (navPosition == 'combo' || demoMode) {
+      @@include("partials/topbar.html")
+      }
+
+      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+
+            <!-- Header -->
+            <div class="header mt-md-5">
+              <div class="header-body">
+
+                <!-- Pretitle -->
+                <h6 class="header-pretitle">
+                  AIRCRFT
+                </h6>
+
+                <!-- Title -->
+                <h1 class="header-title">
+                  Platform Feed
+                </h1>
+
+              </div>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="mb-3">
+              Uplift algorithm <span class="badge badge-soft-success">
+                                LIVE
+                              </span>
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              Founders and their teams contribute back to the network 10% 
+              of their time, talent, insights, and/or resources.
+            </p>
+            
+            <div class="row">
+              <div class="col-12 col-lg-10 col-xl-8">
+              
+                <!-- Card AIRCRFT d196 Startup Spotlight Card -->
+                <div class="card">
+
+                  <!-- Image -->
+                  <a href="project-overview.html">
+                    <img src="assets/img/avatars/covers/AIRCRFT STARTUP SPOTLIGHT COVER IMG.png" alt="AIRCRFT STARTUP SPOTLIGHT COVER" class="card-img-top">
+                  </a>
+
+                  <!-- Body -->
+                  <div class="card-body">
+
+                    <!-- Header -->
+                    <div class="row align-items-center mb-4">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h4 class="mb-2">
+                          <a href="project-overview.html">Homepage Redesign</a>
+                        </h4>
+
+                        <!-- Subtitle -->
+                        <p class="small text-muted mb-0">
+                          Updated 4hr ago
+                        </p>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Dropdown -->
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#!" class="dropdown-item">
+                              Action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Another action
+                            </a>
+                            <a href="#!" class="dropdown-item">
+                              Something else here
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+
+                    <!-- Stats -->
+                    <div class="row no-gutters border-top border-bottom">
+                      <div class="col-6 py-4 text-center">
+
+                        <!-- Heading -->
+                        <h6 class="text-uppercase text-muted">
+                          Budget
+                        </h6>
+
+                        <!-- Value -->
+                        <h2 class="mb-0">$2.5k</h2>
+
+                      </div>
+                      <div class="col-6 py-4 text-center border-left">
+
+                        <!-- Heading -->
+                        <h6 class="text-uppercase text-muted">
+                          Value
+                        </h6>
+
+                        <!-- Value -->
+                        <h2 class="mb-0">12.5k</h2>
+
+                      </div>
+                    </div>
+
+                    <!-- List group -->
+                    <div class="list-group list-group-flush mb-4">
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+
+                            <!-- Title -->
+                            <small>Due</small>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <!-- Time -->
+                            <time class="small text-muted" datetime="1988-10-24">
+                              10/24/88
+                            </time>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+
+                            <!-- Title -->
+                            <small>Location</small>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <!-- Text -->
+                            <small class="text-muted">
+                              Los Angeles, CA
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row align-items-center">
+                          <div class="col">
+
+                            <!-- Title -->
+                            <small>Product</small>
+
+                          </div>
+                          <div class="col-auto">
+
+                            <!-- Link -->
+                            <a class="small text-muted">
+                              Landkit
+                            </a>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <div class="row align-items-center no-gutters">
+                          <div class="col-auto">
+
+                            <!-- Text -->
+                            <div class="small mr-2">29%</div>
+
+                          </div>
+                          <div class="col">
+
+                            <!-- Progress -->
+                            <div class="progress progress-sm">
+                              <div class="progress-bar" role="progressbar" style="width: 29%" aria-valuenow="29" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Avatar group -->
+                        <div class="avatar-group">
+                          <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Ab Hadley">
+                            <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                          </a>
+                          <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Adolfo Hess">
+                            <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                          </a>
+                          <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Daniela Dewitt">
+                            <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                          </a>
+                          <a href="profile-posts.html" class="avatar avatar-xs" data-toggle="tooltip" title="Miyah Myles">
+                            <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                          </a>
+                        </div>
+
+                      </div>
+                    </div> <!-- / .row -->
+
+                  </div> <!-- / .card-body -->
+
+                </div>
+
+              </div>
+
+                <!-- Card -->
+                <div class="card card-fill">
+                  <div class="card-header">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Uplift activity
+                    </h4>
+
+                    <!-- Button -->
+                    <a class="small" href="#!">View all</a>
+
+                  </div>
+                  <div class="card-body">
+
+                    <!-- List group -->
+                    <div class="list-group list-group-flush list-group-activity my-n3">
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm">
+                              <div class="avatar-title font-size-lg bg-primary-soft rounded-circle text-primary">
+                                <i class="fe fe-mail"></i>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <h5 class="mb-1">
+                              Chai Forest
+                            </h5>
+
+                            <!-- Text -->
+                            <p class="small text-gray-700 mb-0">
+                              Contributed 4 hours this week to set up newly minted customer lighting startup LF/LD with a self-running webiste and blogging system. 
+                            </p>
+
+                            <!-- Time -->
+                            <small class="text-muted">
+                              2m ago
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm">
+                              <div class="avatar-title font-size-lg bg-primary-soft rounded-circle text-primary">
+                                <i class="fe fe-archive"></i>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <h5 class="mb-1">
+                              Startup founder #2 
+                            </h5>
+
+                            <!-- Text -->
+                            <p class="small text-gray-700 mb-0">
+                              Contributed her time to uplift a startup here!
+                            </p>
+
+                            <!-- Time -->
+                            <small class="text-muted">
+                              2h ago
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm">
+                              <div class="avatar-title font-size-lg bg-primary-soft rounded-circle text-primary">
+                                <i class="fe fe-code"></i>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <h5 class="mb-1">
+                              Startup founder #3
+                            </h5>
+
+                            <!-- Text -->
+                            <p class="small text-gray-700 mb-0">
+                              A successful to deploy to production was executed.
+                            </p>
+
+                            <!-- Time -->
+                            <small class="text-muted">
+                              4 days ago
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="mb-5">
+
+            <!-- Heading -->
+            <h2 class="mb-3">
+              Founders Feed
+            </h2>
+
+            <!-- Text -->
+            <p class="text-muted">
+              Share what your working on at the moment, get support, help other startrups.
+            </p>
+              <div class="col-12 col-lg-10 col-xl-8">
+
+                <!-- Card -->
+                <div class="card card-fill">
+                  <div class="card-header">
+
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Founder Activity
+                    </h4>
+
+                    <!-- Button -->
+                    <a class="small" href="#!">View all</a>
+
+                  </div>
+                  <div class="card-body">
+
+                    <!-- List group -->
+                    <div class="list-group list-group-flush list-group-activity my-n3">
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm avatar-online">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." />
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <h5 class="mb-1">
+                              Founbder #4
+                            </h5>
+
+                            <!-- Text -->
+                            <p class="small text-gray-700 mb-0">
+                              Uploaded the files "Launchday Logo" and "New Design".
+                            </p>
+
+                            <!-- Time -->
+                            <small class="text-muted">
+                              5 hours ago
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm avatar-online">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." />
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <h5 class="mb-1">
+                              Founder #5
+                            </h5>
+
+                            <!-- Text -->
+                            <p class="small text-gray-700 mb-0">
+                              Shared the "Why AIRCRFT Uplift Algorithm is a game changer" post with 124 Pilots.
+                            </p>
+
+                            <!-- Time -->
+                            <small class="text-muted">
+                              1h ago
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                      <div class="list-group-item">
+                        <div class="row">
+                          <div class="col-auto">
+
+                            <!-- Avatar -->
+                            <div class="avatar avatar-sm avatar-offline">
+                              <img class="avatar-img rounded-circle" src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." />
+                            </div>
+
+                          </div>
+                          <div class="col ml-n2">
+
+                            <!-- Heading -->
+                            <h5 class="mb-1">
+                              Founder #6
+                            </h5>
+
+                            <!-- Text -->
+                            <p class="small text-gray-700 mb-0">
+                              Exported sales data from Launchday's subscriber data.
+                            </p>
+
+                            <!-- Time -->
+                            <small class="text-muted">
+                              3h ago
+                            </small>
+
+                          </div>
+                        </div> <!-- / .row -->
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div>
+
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

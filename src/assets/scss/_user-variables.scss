@@ -1,0 +1,12 @@
+// 
+// user-variables.scss
+// Use this to overwrite Bootstrap and Dashkit variables
+//
+
+// Example of a variable override to change Dashkit's background color
+// Remove the "//" to comment it in and see it in action!
+// $body-bg: #12263F;
+.navbar-light .navbar-user-link {
+    color: #335EEA; }
+    .navbar-light .navbar-user-link:hover, .navbar-light .navbar-user-link:focus {
+      color: #12263F; }

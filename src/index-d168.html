@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "title": "AIRCRFT"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+    ================================================== -->
+  @@include("partials/modals.html")
+  @@include("partials/modals.html")
+
+  <!-- NAVIGATION
+    ================================================== 
+  @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+  @@if (sidebarSize == '' || demoMode) {
+  @@include("partials/sidebar.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  @@if (sidebarSize == 'small' || demoMode) {
+  @@include("partials/sidebar-sm.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  }
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  } -->
+  
+  <!-- NAVIGATION Orginial Dashkit Menu Code d168 
+    ================================================== -->
+    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+    @@if (sidebarSize == 'base' || demoMode) {
+    @@include("partials/sidebar.html", {
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
+    })
+    }
+    @@if (sidebarSize == 'small' || demoMode) {
+    @@include("partials/sidebar-sm.html", {
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
+    })
+    }
+    }
+    @@if (navPosition == 'topnav' || demoMode) {
+    @@include("partials/topnav.html", {
+    "category": "dashboards",
+    "subcategory": "",
+    "page": "index.html"
+    })
+    }
+
+  <!-- MAIN CONTENT
+    ================================================== -->
+  <div class="main-content">
+
+    @@if (navPosition == 'combo' || demoMode) {
+    @@include("partials/topbar.html")
+    }
+
+    <!-- HEADER Updated d181 Chai Forest 4:20pm -->
+    <div class="header">
+
+      <!-- AIRCRFT cover splash Image Updated d186 10:49pm by Chai Forest 10:45am -->
+      <!-- <img src="assets/img/covers/aircrft-index-super-clean-d186.png" class="header-img-top" alt="aircrft-index-super-clean-d186"> 
+      <!-- img src="assets/img/covers/aircrft-is-aws-for-early-stage-startups.png" class="header-img-top" alt="aircrft-is-aws-for-early-stage-startups.png"> -->
+      <!-- <img src="assets/img/covers/aircrft-startups-helping-startups-skinny.png" class="header-img-top" alt="aircrft-startups-helping-startups-skinny"> -->
+      <!-- <img src="assets/img/covers/aircrft-startups-helping-startups-skinny.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow.png"> 
+      <img src="assets/img/covers/aircrft-exponential-innovation-platform-double-skinny-rainbow.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow"> 
+      <img src="assets/img/covers/aircrft-open-source-startup-builder.png" class="header-img-top" alt="aircrft-open-source-startup-builder"> 
+      <img src="assets/img/covers/aircrft-be-the-ceo-of-you.png" class="header-img-top" alt="aircrft-be-the-ceo-of-you"> 
+      <img src="assets/img/covers/aircrft-startup-market-network-cover.png" class="header-img-top" alt="aircrft-startup-market-network-cover.png"> 
+      <img src="assets/img/covers/aircrft-e-i-h-cover-d181.png" class="header-img-top" alt="aircrft-exponetial-innovation-hub"> -->
+      <img src="assets/img/covers/aircrft-cover-puts-the-power-on-the-internet-in-your-startup.png" class="header-img-top" alt="aircrft-aircrft-cover-puts-the-power-on-the-internet-in-your-startup">
+      
+      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+
+        <!-- Body -->
+        <div class="header-body mt-n5 mt-md-n6">
+          <div class="row align-items-end">
+            <div class="col-auto">
+
+              <!-- Avatar -->
+              <div class="avatar avatar-xxl header-avatar-top">
+                <img src="assets/img/AIRCRFT-logo-index-v2.jpeg" alt="aircrft-logo"
+                  class="avatar-img rounded-circle border border-4 border-body">
+              </div>
+
+            </div>
+            <div class="col mb-3 ml-n3 ml-md-n2">
+
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                STARTUPS UPLIFTING STARTUPS
+              </h6> -->
+              
+              <!-- Pretitle -->
+              <h6 class="header-pretitle">
+                UPLIFTS YOUR STARTUP
+              </h6> 
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                RUNS YOUR STARTUP
+              </h6> -->
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                FUELS YOUR STARTUP
+              </h6> -->
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                STARTUPS HELPING STARTUPS
+              </h6> -->
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                Startups helping startups
+              </h6> -->
+
+              <!-- Title 
+              <h1 class="header-title">
+                10^9+ Positive Impact Startups
+              </h1> -->
+              
+               <!-- Title 
+              <h1 class="header-title">
+                10^9+ Startup exponential innovation HUb
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Startup HUB | Platform | Marketplace
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Open source startup builder
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Rising together
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Uplift & rise together
+              </h1> -->
+              
+              <!-- Title -->
+              <h1 class="header-title">
+                Startup-in-a-box
+              </h1> 
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Fuels your startup
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Startup-in-a-box
+              </h1> -->
+              
+              
+            </div>
+            <!-- <div class="col mb-3 ml-n3 ml-md-n2">
+
+              <!-- Button 
+                <a href="#!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Access aircrft
+                </a> -->
+
+              <!-- Button 
+                <a href="modal-founders-feed-2.html!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Request aircrft invite
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://startups.aircrftengine.com/ghost/#/signin" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Join AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://aircrft.com" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Deploy AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> deploy your aircrft
+                </a> -->
+                
+              <!-- Button 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> deploy startup builder
+                </a> -->
+                
+              <!-- Button 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Deploy aircrft startup builder
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger Modal Button d170 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> 
+                
+              <!-- Sidebar Menu Trigger Modal Button d170 
+                <a href="#modalDemo" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger Modal Button d170 
+                <a href="#modalDemo" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+              @@if (demoMode) {
+              <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Join
+              </a>
+              } -->
+
+              <!-- All-access Pass 5.7.2020 Button 
+              <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift">
+                Memberships
+              </a> 
+
+            </div> -->
+            <!-- <div class="col mb-3 ml-n3 ml-md-n2">
+                
+              <!-- Sidebar Menu Trigger modalKanbanTask d170 
+                <a href="#modalKanbanTask" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger modalFoundersFeed d170 
+                <a href="#modalFoundersFeed" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> 
+                
+            </div> -->
+            <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+                
+              <!-- Sidebar Menu Trigger modalKanbanTask d170 
+                <a href="#modalKanbanTask" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger modalFoundersFeed - modalMembers - modalPricing - sidebarModalStartupSearch - sidebarModalActivity - modalDemo - modalKanbanTaskEmpty - modalKanbanTask - sidebarModalSearchOG - sidebarModalStartupSearch - modalStartupSpotlight - modalUpliftAlgorithm - d170 
+            <a href="#sidebarModalActivity" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT PRICING
+            </a> -->
+             <!-- Sidebar Menu Trigger updated d170 Chai Forest 3:37pm -  modalFoundersFeed - modalMembers - modalPricing - sidebarModalStartupSearch - sidebarModalActivity - modalDemo - modalKanbanTaskEmpty - modalKanbanTask - sidebarModalSearchOG - sidebarModalStartupSearch - modalStartupSpotlight - modalUpliftAlgorithm - d170 -->
+              <a href="#modalFoundersFeed" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT Engine
+              </a> 
+            
+             </div>
+          </div> <!-- / .row -->
+          <div class="row align-items-center">
+            <div class="col">
+
+              <!-- Nav 
+                <ul class="nav nav-tabs nav-overflow header-tabs">
+                  <li class="nav-item">
+                    <a href="profile-posts.html" class="nav-link active">
+                      Posts
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-groups.html" class="nav-link">
+                      Groups
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-projects.html" class="nav-link">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-files.html" class="nav-link">
+                      Files
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-subscribers.html" class="nav-link">
+                      Passengers
+                    </a>
+                  </li>
+                </ul> -->
+
+            </div>
+          </div>
+        </div> <!-- / .header-body -->
+
+      </div>
+    </div>
+
+    <!-- AIRCRFT PLATFORM POST FEED -->
+    <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-8">
+        
+          <!-- CONTENT -->
+          <div class="row">
+            <div class="col-12">
+
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://tv.aircrft.com" allowfullscreen></iframe>
+              </div>
+  
+            </div>   
+
+          </div>
+         
+        </div>
+
+    </div>
+
+  </div>
+  
+
+  </div> <!-- / .row -->
+  </div>
+  </div> <!-- / .main-content -->
+  
+    <!-- MAIN CONTENT added double main content and demo button d170 2:56pm
+    ================================================== -->
+  <div class="main-content">
+
+    @@if (navPosition == 'combo' || demoMode) {
+    @@include("partials/topbar.html")
+    }
+
+    <!-- HEADER Updated d181 Chai Forest 4:20pm -->
+    <div class="header">
+
+      <!-- AIRCRFT cover splash Image Updated d186 10:49pm by Chai Forest 10:45am -->
+      <!-- <img src="assets/img/covers/aircrft-index-super-clean-d186.png" class="header-img-top" alt="aircrft-index-super-clean-d186"> 
+      <!-- img src="assets/img/covers/aircrft-is-aws-for-early-stage-startups.png" class="header-img-top" alt="aircrft-is-aws-for-early-stage-startups.png"> -->
+      <!-- <img src="assets/img/covers/aircrft-startups-helping-startups-skinny.png" class="header-img-top" alt="aircrft-startups-helping-startups-skinny"> -->
+      <!-- <img src="assets/img/covers/aircrft-startups-helping-startups-skinny.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow.png"> 
+      <img src="assets/img/covers/aircrft-exponential-innovation-platform-double-skinny-rainbow.png" class="header-img-top" alt="aircrft-exponential-innovation-platform-double-skinny-rainbow"> 
+      <img src="assets/img/covers/aircrft-open-source-startup-builder.png" class="header-img-top" alt="aircrft-open-source-startup-builder"> 
+      <img src="assets/img/covers/aircrft-be-the-ceo-of-you.png" class="header-img-top" alt="aircrft-be-the-ceo-of-you"> 
+      <img src="assets/img/covers/aircrft-startup-market-network-cover.png" class="header-img-top" alt="aircrft-startup-market-network-cover.png"> -->
+      <img src="assets/img/covers/aircrft-e-i-h-cover-d181.png" class="header-img-top" alt="aircrft-exponetial-innovation-hub"> 
+      
+      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+
+        <!-- Body -->
+        <div class="header-body mt-n5 mt-md-n6">
+          <div class="row align-items-end">
+            <div class="col-auto">
+
+              <!-- Avatar -->
+              <div class="avatar avatar-xxl header-avatar-top">
+                <img src="assets/img/AIRCRFT-logo-index-v2.jpeg" alt="aircrft-logo"
+                  class="avatar-img rounded-circle border border-4 border-body">
+              </div>
+
+            </div>
+            <div class="col mb-3 ml-n3 ml-md-n2">
+
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                STARTUPS UPLIFTING STARTUPS
+              </h6> -->
+              
+              <!-- Pretitle -->
+              <h6 class="header-pretitle">
+                UPLIFTS YOUR STARTUP
+              </h6> 
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                RUNS YOUR STARTUP
+              </h6> -->
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                FUELS YOUR STARTUP
+              </h6> -->
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                STARTUPS HELPING STARTUPS
+              </h6> -->
+              
+              <!-- Pretitle 
+              <h6 class="header-pretitle">
+                Startups helping startups
+              </h6> -->
+
+              <!-- Title 
+              <h1 class="header-title">
+                10^9+ Positive Impact Startups
+              </h1> -->
+              
+               <!-- Title 
+              <h1 class="header-title">
+                10^9+ Startup exponential innovation HUb
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Startup HUB | Platform | Marketplace
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Open source startup builder
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Rising together
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Uplift & rise together
+              </h1> -->
+              
+              <!-- Title -->
+              <h1 class="header-title">
+                Startup-in-a-box
+              </h1> 
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Fuels your startup
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Startup-in-a-box
+              </h1> -->
+              
+              
+            </div>
+            <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+
+              <!-- Button 
+                <a href="#!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Access aircrft
+                </a> -->
+
+              <!-- Button 
+                <a href="modal-founders-feed-2.html!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Request aircrft invite
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://startups.aircrftengine.com/ghost/#/signin" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Join AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://aircrft.com/iframe-ghost-start-engine.html" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Join AIRCRFT
+                </a> -->
+                
+              <!-- Button Demo button test 3:06pm -->
+              <a href="#modalDemo" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Demo Mode Test
+              </a>
+
+              <!-- All-access Pass 5.7.2020 Button 
+              <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift">
+                Memberships
+              </a> -->
+
+            </div>
+            <!-- <div class="col mb-3 ml-n3 ml-md-n2">
+
+              <!-- Button 
+                <a href="#!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Access aircrft
+                </a> -->
+
+              <!-- Button 
+                <a href="modal-founders-feed-2.html!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Request aircrft invite
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://startups.aircrftengine.com/ghost/#/signin" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Join AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://aircrft.com" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Deploy AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> deploy your aircrft
+                </a> -->
+                
+              <!-- Button 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> deploy startup builder
+                </a> -->
+                
+              <!-- Button 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Deploy aircrft startup builder
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger Modal Button d170 
+                <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> 
+                
+              <!-- Sidebar Menu Trigger Modal Button d170 
+                <a href="#modalDemo" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger Modal Button d170 
+                <a href="#modalDemo" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+              @@if (demoMode) {
+              <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Join
+              </a>
+              } -->
+
+              <!-- All-access Pass 5.7.2020 Button 
+              <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift">
+                Memberships
+              </a> 
+
+            </div> -->
+            <!-- <div class="col mb-3 ml-n3 ml-md-n2">
+                
+              <!-- Sidebar Menu Trigger modalKanbanTask d170 
+                <a href="#modalKanbanTask" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger modalFoundersFeed d170 
+                <a href="#modalFoundersFeed" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> 
+                
+            </div> -->
+            <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+                
+              <!-- Sidebar Menu Trigger modalKanbanTask d170 
+                <a href="#modalKanbanTask" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> -->
+                
+              <!-- Sidebar Menu Trigger modalFoundersFeed modalMembers - modalPricing - d170 -->
+                <a href="#modalMembers" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i>AIRCRFT
+                </a> 
+                
+            </div>
+          </div> <!-- / .row -->
+          <div class="row align-items-center">
+            <div class="col">
+
+              <!-- Nav 
+                <ul class="nav nav-tabs nav-overflow header-tabs">
+                  <li class="nav-item">
+                    <a href="profile-posts.html" class="nav-link active">
+                      Posts
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-groups.html" class="nav-link">
+                      Groups
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-projects.html" class="nav-link">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-files.html" class="nav-link">
+                      Files
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-subscribers.html" class="nav-link">
+                      Passengers
+                    </a>
+                  </li>
+                </ul> -->
+
+            </div>
+          </div>
+        </div> <!-- / .header-body -->
+
+      </div>
+    </div>
+
+    <!-- AIRCRFT PLATFORM POST FEED -->
+    <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+      <div class="row justify-content-center">
+        <div class="col-12 col-xl-8">
+        
+          <!-- CONTENT -->
+          <div class="row">
+            <div class="col-12">
+
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://tv.aircrft.com" allowfullscreen></iframe>
+              </div>
+  
+            </div>   
+
+          </div>
+         
+        </div>
+
+    </div>
+
+  </div>
+  
+
+  </div> <!-- / .row -->
+  </div>
+  </div> <!-- / .main-content -->
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>
