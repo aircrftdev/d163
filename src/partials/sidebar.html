@@ -173,10 +173,12 @@
       <!-- Push content down -->
       <div class="mt-auto"></div>
       
+      @@if (demoMode) {
       <!-- Customize -->
       <a href="#modalAllAccessPass1" class="btn btn-block btn-primary mb-4" data-toggle="modal">
         <i class="fe fe-sliders mr-2"></i> DEPLOY
       </a>
+      }
       
       @@if (navPosition == 'sidenav') {
       <!-- User (md) -->
@@ -199,13 +201,13 @@
             </div>
           </a>
 
-          <!-- Menu -->
+          <!-- Menu 
           <div class="dropdown-menu" aria-labelledby="sidebarIconCopy">
-            <a href="memberships.html" class="dropdown-item">Bigsidebar menu 1</a>
-            <a href="settings.html" class="dropdown-item">big side bar 2</a>
+            <a href="memberships.html" class="dropdown-item">Memberships</a>
+            <a href="settings.html" class="dropdown-item">Account Settings</a>
             <hr class="dropdown-divider">
-            <a href="sign-in.html" class="dropdown-item">Big side bar 3</a>
-          </div>
+            <a href="sign-in.html" class="dropdown-item">Logout</a>
+          </div> -->
 
         </div>
 
