@@ -1,0 +1,326 @@
+<nav class="navbar navbar-vertical fixed-left navbar-expand-md @@if(navColor=='default' && !demoMode){navbar-light}@@if(navColor=='inverted' &&!demoMode){}@@if(navColor=='vibrant' && !demoMode){navbar-dark bg-vibrant}" id="sidebar">
+  <div class="container-fluid">
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidebarCollapse" aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="index.html">
+      <img src="@@webRoot/assets/img/aircrft-sidebar-clean-d167-new.png" class="navbar-brand-img 
+      mx-auto" alt="AIRCRFT"> 
+    </a>
+    <!-- <h6 class="navbar-heading"> 
+        EXPONENTIAL INNOVATION HUB
+    </h6> -->
+
+    <!-- User (xs) Added sticky nav on mobile - 5.7.2020 - Chai Forest -->
+    <div class="navbar-user d-md-none ">
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        
+        <!-- Toggle -->
+        <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div class="avatar avatar-sm avatar-online">
+            <img src="@@webRoot/assets/img/logo.png" class="avatar-img rounded-circle" alt="AIRCRFT">
+          </div>
+        </a>
+
+        <!-- Menu Mobile Sidebar Logo Menu -->
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="sidebarIcon">
+          <a href="engine.html" class="dropdown-item">Engine</a>
+          <a href="engine.html" class="dropdown-item">How it works</a>
+          <hr class="dropdown-divider">
+          <a href="#modalPricing" data-toggle="modal" class="text-success" class="dropdown-item">Pricing</a>
+         </div> 
+
+      </div>
+
+    </div>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="sidebarCollapse">
+
+      <!-- AIRCRFT Search Form -->
+      <form class="mt-4 mb-3 d-md-none">
+        <div class="input-group input-group-rounded input-group-merge">
+          <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <span class="fe fe-search"></span>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <!-- Heading - Main Menu Starts Here Chai 
+      <h6 class="navbar-heading"> 
+        EXPONENTIAL INNOVATION HUB
+      </h6> -->
+      
+            <!-- AIRCRFT d157 Update 8:06pm Chai Forest List group -->
+            <div class="list-group list-group-flush list-group-activity my-n3">
+              <a class="list-group-item text-reset" href="engine.html">
+                <div class="row">
+                  <div class="col-auto">
+
+                    <!-- Engine Icon -->
+                    <div class="avatar avatar-md avatar-online">
+                      <img class="avatar-img rounded-circle" src="@@webRoot/assets/img/avatars/icons/engine.png" alt="AIRCRFT Engine" />
+                    </div>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Heading -->
+                    <span class="text-primary">Engine</span> <!--<span class="badge badge-soft-success ml-auto">Supercharger</span> -->
+
+                    <!-- Text 
+                    <p class="small text-gray-700 mb-0">
+                      Rocket fuel for your startup!
+                    </p> -->
+                    
+                    <!-- Text 
+                    <p class="small text-gray-700 mb-0">
+                      Fuels Your Startup
+                    </p> -->
+                    
+                    <!-- Text 
+                    <p class="small text-gray-700 mb-0">
+                    Apps + Code + Components
+                    </p> -->
+                    
+                    <!-- Text -->
+                    <p class="small text-muted mb-0">
+                    Startup Supercharger
+                    </p>
+
+                    <!-- Time 
+                    <small class="text-muted">
+                    How it works
+                    </small> -->
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                    Peak under the hood
+                    </small> -->
+
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="#modalPricing data-toggle="modal">
+                <div class="row">
+                  <div class="col-auto">
+
+                    <!-- Pricing Icon Avatar -->
+                    <div class="avatar avatar-md avatar-online">
+                      <img class="avatar-img rounded-circle" src="@@webRoot/assets/img/avatars/icons/pricing.png" alt="pricing" />
+                    </div>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Heading -->
+                    <span class="text-primary">Pricing</span> <!-- <span class="badge badge-soft-danger ml-auto">Aircrft Startup Engine</span> -->
+                    
+                    <!-- Text 
+                    <p class="small text-gray-700 mb-0">
+                      Platform | Community | Payments 
+                    </p> -->
+                    
+                    <!-- Text 
+                    <p class="small text-gray-700 mb-0">
+                      Platform-in-a-Box Startup 
+                    </p> -->
+                    
+                    <!-- Text -->
+                    <p class="small text-muted mb-0">
+                      MVP Launch Kit
+                    </p>
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      ONLY $20/mo  
+                    </small> -->
+                    
+                    <!-- Text -->
+                    <p class="small text-gray-700 mb-0">
+                      ONLY $20/mo   
+                    </p> 
+
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="engine.html">
+                <div class="row">
+                  <div class="col-auto">
+
+                    <!-- Pricing Icon Avatar -->
+                    <div class="avatar avatar-md avatar-online">
+                      <img class="avatar-img rounded-circle" src="@@webRoot/assets/img/avatars/icons/how-it-works-aircrft-icon.png" alt="how-aircrft-works"/>
+                    </div>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Heading -->
+                    <span class="text-primary">How it works</span> 
+                    
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                    Peak under the hood
+                    </small> -->
+                    
+                    <!-- Text -->
+                    <p class="small text-muted mb-0">Peak under the hood
+                    </p>
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      $20/mo  
+                    </small> -->
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Platform + Community + Payments 
+                    </small> -->
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Apps + Code + Components
+                    </small> -->
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Startup-in-a-Box
+                    </small> -->
+
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="motivation.html">
+                <div class="row">
+                  <div class="col-auto">
+
+                    <!-- Pricing Icon Avatar -->
+                    <div class="avatar avatar-md avatar-online">
+                      <img class="avatar-img rounded-circle" src="@@webRoot/assets/img/avatars/icons/motivation.png" alt="motivation"/>
+                    </div>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Heading -->
+                    <span class="text-primary">Motivation</span> <!-- <span class="badge badge-soft-danger ml-auto">Aircrft Startup Engine</span> -->
+                    
+                    <!-- Text -->
+                    <p class="small text-muted mb-0">
+                      Moonshot mission
+                    </p> 
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Our moonshot mission  
+                    </small> -->
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Platform + Community + Payments 
+                    </small> -->
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Apps + Code + Components
+                    </small> -->
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Startup-in-a-Box
+                    </small> -->
+
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+              <a class="list-group-item text-reset" href="team.html">
+                <div class="row">
+                  <div class="col-auto">
+
+                    <!-- Team Icon Avatar -->
+                    <div class="avatar avatar-md avatar-online">
+                      <img class="avatar-img rounded-circle" src="@@webRoot/assets/img/avatars/icons/snippets-code.png" alt="aircrft team"/>
+                    </div>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Heading -->
+                    <span class="text-primary">Team</span>
+                    
+                    <!-- Text -->
+                    <p class="small text-muted mb-0">
+                      Code Captains
+                    </p> 
+                    
+                    <!-- Time 
+                    <small class="text-muted">
+                      Meet our Code Captains 
+                    </small> -->
+
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+
+      <!-- Divider 
+      <hr class="navbar-divider my-3"> -->
+      
+      <!-- Push content down -->
+      <div class="mt-auto"></div>
+      
+      @@if (navPosition == 'sidenav') {
+      <!-- User (md) -->
+      <div class="navbar-user d-none d-md-flex" id="sidebarUser">
+        
+        <!-- Icon -->
+        <a href="#sidebarModalActivity" class="navbar-user-link" data-toggle="modal">
+          <span class="icon">
+            <i class="fe fe-bell"></i>
+          </span>
+        </a>
+
+        <!-- Dropup -->
+        <div class="dropup">
+          
+          <!-- Toggle -->
+          <a href="#" id="sidebarIcon" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="avatar avatar-sm avatar-online">
+              <img src="@@webRoot/assets/img/logo.png" class="avatar-img rounded-circle" alt="...">
+            </div>
+          </a>
+
+          <!-- Menu -->
+          <div class="dropdown-menu" aria-labelledby="sidebarIconCopy">
+            <a href="engine.html" class="dropdown-item">Engine + Components</a>
+            <a href="engine.html" class="dropdown-item">How it works</a>
+            <hr class="dropdown-divider">
+            <a href="pricing.html" class="dropdown-item">Pricing</a>
+          </div> 
+
+        </div>
+
+        <!-- Icon -->
+        <a href="#modalPricing" class="navbar-user-link" data-toggle="modal">
+          <span class="icon">
+            <i class="fe fe-search"></i>
+          </span>
+        </a> 
+
+      </div>
+      }
+
+    </div> <!-- / .navbar-collapse -->
+
+  </div>
+</nav>
