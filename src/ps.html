@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  @@include("partials/head.html", {
+  "title": "AIRCRFT Problem Stack"
+  })
+</head>
+
+<body>
+
+  <!-- MODALS
+    ================================================== -->
+  @@include("partials/modals.html")
+  @@include("partials/modals.html")
+
+  <!-- NAVIGATION
+    ================================================== -->
+  @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
+  @@if (sidebarSize == 'base' || demoMode) {
+  @@include("partials/sidebar.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  @@if (sidebarSize == 'small' || demoMode) {
+  @@include("partials/sidebar-sm.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+  }
+  @@if (navPosition == 'topnav' || demoMode) {
+  @@include("partials/topnav.html", {
+  "category": "pages",
+  "subcategory": "project",
+  "page": "index.html"
+  })
+  }
+
+  <!-- MAIN CONTENT AIRCRFT Startup App Store Exponential Innovation Hub | Founder Curated Stacks | AI Managed Backend Cloud Infrastructure d146/20 Good Morning Chai Chai 12:00pm Chai Forest 
+    ================================================== -->
+  <div class="main-content">
+
+    @@if (navPosition == 'combo' || demoMode) {
+    @@include("partials/topbar.html")
+    }
+
+    <!-- HEADER -->
+    <div class="header">
+
+      <!-- Image Updated d154 Startup App Store Chai Forest 
+      <img src="assets/img/covers/aircrft-open-source-startup-builder-skinny.png" class="header-img-top" alt="aircrft-open-source-startup-builder"> -->
+      <!-- Image Updated d167 Chai Forest 
+      <img src="assets/img/covers/aircrft-index-cover-d166.png" class="header-img-top" alt="aircrft-index-cover-d166"> 
+      <img src="assets/img/covers/aircrft-startup-app-store-d165-logo.png" class="header-img-top" alt="aircrft-startup-app-store-d165-logo">
+      <img src="assets/img/covers/aircrft-startup-app-store-d165-logo.png" class="header-img-top" alt="aircrft-startup-app-store-d165-logo"> 
+      <img src="assets/img/covers/aircrft-engine-startups-app-store-d163.png" class="header-img-top" alt="aircrft-engine-startups-app-store"> 
+      <img src="assets/img/covers/aircrft-startups-app-store-d163-this-one.png" class="header-img-top" alt="aircrft-startups-app-d163-human-curated"> 
+      <img src="assets/img/covers/aircrft-injects-rocket-fuel-into-your-startup.png" class="header-img-top" alt="aircrft-injects-rocket-fuel-into-your-startup"> 
+      <img src="assets/img/covers/aircrft-d163-new.png" class="header-img-top" alt="aircrft-startups-app-store"> 
+      <img src="assets/img/covers/aircrft-injects-d163.png" class="header-img-top" alt="aircrft-injects-d163.png"> 
+      <img src="assets/img/covers/aircrft-injects-d163-updated.png" class="header-img-top" alt="aircrft-injects-d163-updated.png"> 
+      <img src="assets/img/covers/aircrft-engine-supercharges-your-startup-business-d162.png" class="header-img-top" alt="aircrft-engine-supercharges-your-startup-business-d162"> 
+      <img src="assets/img/covers/aircrft-engine-startups-app-store-d163.png" class="header-img-top" alt="aircrft-engine-startups-app-store-d163"> 
+      <img src="assets/img/covers/aircrft-startups-app-store-d163-this-one.png" class="header-img-top" alt="aircrft-startups-app-store-d163-this-one"> 
+      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
+      <img src="assets/img/covers/aircrft-startup-innovation-hub-d159.png" class="header-img-top" alt="aircrft-startup-innovation-hub-d159"> 
+      <img src="assets/img/covers/aircrft-startup-innovation-hub-d159.png" class="header-img-top" alt="aircrft-startup-innovation-hub-d159"> 
+      <img src="assets/img/covers/aircrft-puts-a-rocket-engine-into-your-startup-d159.png" class="header-img-top" alt="aircrft-puts-a-rocket-engine-into-your-startup-d159"> 
+      <img src="assets/img/covers/aircrft-puts-fireball-superpowers-into-your-startup.png" class="header-img-top" alt="aircrft-puts-fireball-superpowers-into-your-startup"> 
+      <img src="assets/img/covers/aircrft-mvp-startup-launcher-kit.png" class="header-img-top" alt="aircrft-mvp-startup-launcher-kit.png"> 
+      <img src="assets/img/covers/aircrft-startup-launch-kit-d156.png" class="header-img-top" alt="aircrft-startup-launch-kit-d156"> 
+      <img src="assets/img/covers/aircrft-startup-launch-kit-update-d156.png" class="header-img-top" alt="aircrft-startup-launch-kit-update-d156"> 
+      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
+      <img src="assets/img/covers/aircrft-startup-app-store-exo-inno-hub.png class="header-img-top" alt="aircrft-startup-app-store-exo-inno-hub"> 
+      <img src="assets/img/covers/aircrft-index-cover-d151.png class="header-img-top" alt="aircrft-index-cover-d151"> 
+      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
+      <img src="assets/img/covers/aircrft-startup-launch-kit-update-d156.png" class="header-img-top" alt="aircrft-startup-launch-kit-update-d156"> 
+      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
+      <img src="assets/img/covers/aircrft-startup-app-store-d142.png" class="header-img-top" alt="  aircrft-startup-app-store-d142"> 
+       <img src="assets/img/covers/aircrft-people-of-the-internet-harnessing-the-magic-of-the-internet.png" class="header-img-top" alt="aircrft-people-of-the-internet-harnessing-the-magic-of-the-internet"> 
+       <img src="assets/img/covers/aircrft-startup-app-store-d142.png" class="header-img-top" alt="aircrft-startup-app-store-d142">
+       <img src="assets/img/covers/aircrft-solving-problems-d140.png" class="header-img-top" alt="aircrft-solving-problems-d140"> 
+       <img src="assets/img/covers/aircrft-startup-app-store-d142.png" class="header-img-top" alt="aircrft-startup-app-store-d142"> -->
+       <img src="assets/img/covers/aircrft-d163-new.png" class="header-img-top" alt="aircrft-d163-new">
+
+      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+
+        <!-- Body -->
+        <div class="header-body mt-n5 mt-md-n6">
+          <div class="row align-items-end">
+            <div class="col-auto">
+
+              <!-- Avatar -->
+              <div class="avatar avatar-xxl header-avatar-top">
+                <img src="assets/img/AIRCRFT-logo-index-v2.jpeg" alt="aircrft-logo"
+                  class="avatar-img rounded-circle border border-4 border-body">
+              </div>
+
+            </div>
+            <div class="col mb-3 ml-n3 ml-md-n2">
+
+              <!-- Pretitle go live 
+              <h6 class="header-pretitle">
+                 Uplift & rise together
+              </h6> -->
+              
+              <!-- Pretitle updated d163 
+              <h6 class="header-pretitle">
+                 HUMAN CURATED | AI MANAGED 
+              </h6> -->
+
+              <!-- Pretitle updated d146 
+              <h6 class="header-pretitle">
+                 FOUNDER CURATED | AI MANAGED 
+              </h6> -->
+              
+              <!-- Pretitle updated d137 -->
+              <h6 class="header-pretitle">
+                 SOLVING THE PROBLEM OF PROBLEM-SOLVING 
+              </h6>
+              
+              <!-- Pretitle updated d151 
+              <h6 class="header-pretitle">
+                 FOUNDER CURATED STACK | AI MANAGED INFRASTRUCTURE
+              </h6> -->
+              
+              <!-- Pretitle updated d151 
+              <h6 class="header-pretitle">
+                 FOUNDER CURATED APPS | AI MANAGED CLOUD
+                 
+              </h6> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Startups empowering startups
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                The Startup's App Store
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Startup App Store
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Supercharges your startup
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Uplifts your startup
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                aircrft startup engine
+              </h1> -->
+              
+              <!-- Title d156 good! 
+              <h1 class="header-title">
+                AIRCRFT/engine
+              </h1> -->
+              
+              <!-- Title d140 
+              <h1 class="header-title">
+                Puts 🔥 into Your Startup
+              </h1> -->
+              
+              <!-- Title d138 
+              <h1 class="header-title">
+                Solving the problem of problem-solving -->
+                
+              <!-- Title d154 
+              <h1 class="header-title">
+                Startup's App Store
+              </h1> -->
+              
+              <!-- Title d154 
+              <h1 class="header-title">
+                FOUNDER CURATED | AI MANAGED
+              </h1> -->
+              
+              <!-- Title d135/2020 Created & Coded by Chai Forest -->
+              <h1 class="header-title">
+                AIRCRFT Problem Stack
+              </h1>
+              
+              <!-- Title d135 ? 
+              <h1 class="header-title">
+                Startup's Stack Store
+              </h1> -->
+              
+              <!-- Title d135 ? 
+              <h1 class="header-title">
+                The Startup Stacks Store
+              </h1> -->
+              
+              <!-- Title d154 
+              <h1 class="header-title">
+                Passion 🔥 + Purpose Platform
+              </h1> -->
+              
+              <!-- Title d153
+              <h1 class="header-title">
+                Work together seamlessly with effortless effort. 
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Puts Superpowers into Your Startup
+              </h1> -->
+              
+              <!-- Title 
+              <h1 class="header-title">
+                Injects rocket fuel into your business.
+              </h1> -->
+
+            </div>
+            <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+
+              <!-- Button 
+                <a href="#!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Access aircrft
+                </a> -->
+
+              <!-- Button 
+                <a href="modal-founders-feed-2.html!" class="btn btn-primary d-block d-md-inline-block lift">
+                  Request aircrft invite
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://startups.aircrftengine.com/ghost/#/signin" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Join AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+                <a href="https://aircrft.com/iframe-ghost-start-engine.html" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
+                  Join AIRCRFT
+                </a> -->
+                
+              <!-- Button 
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Start free trial
+              </a> -->
+              
+              <!-- Button 
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Deploy Your AIRCRFT
+              </a> -->
+              
+              <!-- Button Launch d140 
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> LAUNCH
+              </a> -->
+              
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> Explore
+              </a>
+              
+              <!-- Button d141 Update Launch Now 
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> LAUNCH NOW
+              </a> -->
+              
+              <!-- Button 
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> LAUNCH IGNITION SEQUENCE
+              </a> -->
+              
+              <!-- Button 
+              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-sliders mr-2"></i> ACTIVATE AIRCRFT
+              </a> 
+
+              <!-- All-access Pass 5.7.2020 Button 
+              <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift">
+                Memberships
+              </a> -->
+
+            </div>
+          </div> <!-- / .row -->
+          <div class="row align-items-center">
+            <div class="col">
+
+              <!-- Nav 
+                <ul class="nav nav-tabs nav-overflow header-tabs">
+                  <li class="nav-item">
+                    <a href="profile-posts.html" class="nav-link active">
+                      Posts
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-groups.html" class="nav-link">
+                      Groups
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-projects.html" class="nav-link">
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-files.html" class="nav-link">
+                      Files
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="profile-subscribers.html" class="nav-link">
+                      Passengers
+                    </a>
+                  </li>
+                </ul> -->
+
+            </div>
+          </div>
+        </div> <!-- / .header-body -->
+
+      </div>
+    </div>
+
+    <!-- AIRCRFT PLATFORM POST FEED Update Live by Chai Forest d161 6:05pm -->
+    <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+      <!-- div class="row justify-content-center">
+        <div class="col-12 col-xl-8"> -->
+        
+          <!-- Post #1 AIRCFT Platform Post Thrusday August 13 2020 d140 11:37am aircrft-mtp-d140.png -->
+          <div class="card">
+            <div class="card-body">
+              
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                   
+                    <!-- Avatar -->
+                    <a href="founder-profile-chai-forest.html" class="avatar">
+                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="Chai Forest" class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      Chai Forest
+                    </h4>
+                              <!-- Time -->
+                    <p class="card-text small text-muted">Pilot
+                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">01 min ago
+                        | Day 160</time>
+                    </p>
+
+                  </div>
+                  <div class="col-auto">
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+                  
+              <!-- Image -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/aircrft-mtp-v2.png" alt="aircrft-mtp-v2"
+                  class="img-fluid rounded">
+              </p>
+              
+            </div>
+         </div>
+        
+        <!-- CONTENT tv.aircrft.com iframe updated d167 -->
+          <div class="row">
+            <div class="col-12">
+
+              <div class="embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://tv.aircrft.com" allowfullscreen></iframe>
+              </div>
+  
+            </div>   
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  </div> <!-- / .row -->
+  </div>
+  </div> <!-- / .main-content -->
+
+  <!-- JAVASCRIPT
+    ================================================== -->
+  @@include("partials/scripts.html")
+
+</body>
+
+</html>
