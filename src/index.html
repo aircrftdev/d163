@@ -1,20 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    @@include("partials/head.html", {
+    "title": "AIRCRFT | Moonshot Marketplace"
+    })
+  </head>
+  <body>
 
-<head>
-  @@include("partials/head.html", {
-  "title": "AIRCRFT Startup Store"
-  })
-</head>
-
-<body>
-
-  <!-- MODALS
+    <!-- MODALS
     ================================================== -->
-  @@include("partials/modals.html")
-  @@include("partials/modals.html")
+    @@include("partials/modals.html")
 
-  <!-- NAVIGATION
+    <!-- NAVIGATION
     ================================================== -->
   @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
   @@if (sidebarSize == 'base' || demoMode) {
@@ -40,7 +37,7 @@
   })
   }
 
-  <!-- MAIN CONTENT AIRCRFT Startup App Store Exponential Innovation Hub | Founder Curated Stacks | AI Managed Backend Cloud Infrastructure d146/20 Good Morning Chai Chai 12:00pm Chai Forest 
+  <!-- MAIN CONTENT AIRCRFT Startup Shop YC Build SprintbDay #10 d120-20 Updated Handcoded, curated and crafted by Chai Forest chai@aircrft.com
     ================================================== -->
   <div class="main-content">
 
@@ -48,339 +45,331 @@
     @@include("partials/topbar.html")
     }
 
-    <!-- HEADER -->
-    <div class="header">
+      <!-- HEADER -->
+      <div class="header">
 
-      <!-- Image Updated d154 Startup App Store Chai Forest 
-      <img src="assets/img/covers/aircrft-open-source-startup-builder-skinny.png" class="header-img-top" alt="aircrft-open-source-startup-builder"> -->
-      <!-- Image Updated d167 Chai Forest 
-      <img src="assets/img/covers/aircrft-index-cover-d166.png" class="header-img-top" alt="aircrft-index-cover-d166"> 
-      <img src="assets/img/covers/aircrft-startup-app-store-d165-logo.png" class="header-img-top" alt="aircrft-startup-app-store-d165-logo">
-      <img src="assets/img/covers/aircrft-startup-app-store-d165-logo.png" class="header-img-top" alt="aircrft-startup-app-store-d165-logo"> 
-      <img src="assets/img/covers/aircrft-engine-startups-app-store-d163.png" class="header-img-top" alt="aircrft-engine-startups-app-store"> 
-      <img src="assets/img/covers/aircrft-startups-app-store-d163-this-one.png" class="header-img-top" alt="aircrft-startups-app-d163-human-curated"> 
-      <img src="assets/img/covers/aircrft-injects-rocket-fuel-into-your-startup.png" class="header-img-top" alt="aircrft-injects-rocket-fuel-into-your-startup"> 
-      <img src="assets/img/covers/aircrft-d163-new.png" class="header-img-top" alt="aircrft-startups-app-store"> 
-      <img src="assets/img/covers/aircrft-injects-d163.png" class="header-img-top" alt="aircrft-injects-d163.png"> 
-      <img src="assets/img/covers/aircrft-injects-d163-updated.png" class="header-img-top" alt="aircrft-injects-d163-updated.png"> 
-      <img src="assets/img/covers/aircrft-engine-supercharges-your-startup-business-d162.png" class="header-img-top" alt="aircrft-engine-supercharges-your-startup-business-d162"> 
-      <img src="assets/img/covers/aircrft-engine-startups-app-store-d163.png" class="header-img-top" alt="aircrft-engine-startups-app-store-d163"> 
-      <img src="assets/img/covers/aircrft-startups-app-store-d163-this-one.png" class="header-img-top" alt="aircrft-startups-app-store-d163-this-one"> 
-      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
-      <img src="assets/img/covers/aircrft-startup-innovation-hub-d159.png" class="header-img-top" alt="aircrft-startup-innovation-hub-d159"> 
-      <img src="assets/img/covers/aircrft-startup-innovation-hub-d159.png" class="header-img-top" alt="aircrft-startup-innovation-hub-d159"> 
-      <img src="assets/img/covers/aircrft-puts-a-rocket-engine-into-your-startup-d159.png" class="header-img-top" alt="aircrft-puts-a-rocket-engine-into-your-startup-d159"> 
-      <img src="assets/img/covers/aircrft-puts-fireball-superpowers-into-your-startup.png" class="header-img-top" alt="aircrft-puts-fireball-superpowers-into-your-startup"> 
-      <img src="assets/img/covers/aircrft-mvp-startup-launcher-kit.png" class="header-img-top" alt="aircrft-mvp-startup-launcher-kit.png"> 
-      <img src="assets/img/covers/aircrft-startup-launch-kit-d156.png" class="header-img-top" alt="aircrft-startup-launch-kit-d156"> 
-      <img src="assets/img/covers/aircrft-startup-launch-kit-update-d156.png" class="header-img-top" alt="aircrft-startup-launch-kit-update-d156"> 
-      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
-      <img src="assets/img/covers/aircrft-startup-app-store-exo-inno-hub.png class="header-img-top" alt="aircrft-startup-app-store-exo-inno-hub"> 
-      <img src="assets/img/covers/aircrft-index-cover-d151.png class="header-img-top" alt="aircrft-index-cover-d151"> 
-      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
-      <img src="assets/img/covers/aircrft-startup-launch-kit-update-d156.png" class="header-img-top" alt="aircrft-startup-launch-kit-update-d156"> 
-      <img src="assets/img/covers/aircrft-startup-app-store-d159.png" class="header-img-top" alt="aircrft-startup-app-store-d159"> 
-      <img src="assets/img/covers/aircrft-startup-app-store-d142.png" class="header-img-top" alt="  aircrft-startup-app-store-d142"> 
-       <img src="assets/img/covers/aircrft-people-of-the-internet-harnessing-the-magic-of-the-internet.png" class="header-img-top" alt="aircrft-people-of-the-internet-harnessing-the-magic-of-the-internet"> 
-       <img src="assets/img/covers/aircrft-startup-app-store-d142.png" class="header-img-top" alt="aircrft-startup-app-store-d142">
-       <img src="assets/img/covers/aircrft-solving-problems-d140.png" class="header-img-top" alt="aircrft-solving-problems-d140"> 
-       <img src="assets/img/covers/aircrft-startup-app-store-d142.png" class="header-img-top" alt="aircrft-startup-app-store-d142"> 
-       <img src="assets/img/covers/aircrft-d163-new.png" class="header-img-top" alt="aircrft-d163-new"> 
-       <img src="assets/img/covers/aircrft-cover-133.png" class="header-img-top" alt="aircrft-cover-133"> 
-       <img src="assets/img/covers/aircrft-clean-cover-133.png" class="header-img-top" alt="aircrft-clean-cover-133"> aircrft-startups-marketplace.png aircrft-cover-startupfunding-wealth-cocreation-problem-solving-12-19-2020.png -->
-       <img src="assets/img/covers/aircrft-cover-startupfunding-wealth-cocreation-problem-solving-12-19-2020.png" class="header-img-top" alt="aircrft-startups-marketplace">
+        <!-- Image 
+        <img src="assets/img/covers/aircrft-mvp-curated-stack-cover-d155-20.png" class="header-img-top" alt="AIRCRFT Startup Store"> -->
+        
+        <!-- Image aircrft-cover-11-11-2020.png 
+        <img src="assets/img/covers/aircrft-cover-the-moonshot-marketplace.png" class="header-img-top" alt="AIRCRFT The Moonshot Marketplace"> -->
+        
+        <!-- ⭐️ Image AIRCRFT Moonshot Marketplace & LAUNCHPAD for Startups | Update by Chai Forest 11.23.2020  chai@aircrft.com | aircrft-cover-11-11-2020.png aircrft-cover-133.png aircrft-cover-startup-stack-store-11-16-2020.png aircrft-cover-one-11-16-2020.png aircrft-cover-1.png | aircrft-cover-moonshot-marketplace-launchpad-11-23-2020.png | aircrft-cover-moonshot-marketplace-startup-launchpad.png | aircrft-cover-moonshot-marketplace-startup-launchpad.png | aircrft-cover-internet-business-made-easy-12-17-2020.png aircrft-cover-startupfunding-wealth-cocreation-problem-solving-12-19-2020.png -->
+        <img src="assets/img/covers/aircrft-cover-startupfunding-wealth-cocreation-problem-solving-12-19-2020.png" class="header-img-top" alt="Aircrft Start Stack Store | Internet Business Made Easy">
 
-      <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
+        <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
 
-        <!-- Body -->
-        <div class="header-body mt-n5 mt-md-n6">
-          <div class="row align-items-end">
-            <div class="col-auto">
+          <!-- Body -->
+          <div class="header-body mt-n5 mt-md-n6">
+            <div class="row align-items-end">
+              <div class="col-auto">
 
-              <!-- Avatar -->
-              <div class="avatar avatar-xxl header-avatar-left">
-                <img src="assets/img/AIRCRFT-logo-index-v2.jpeg" alt="aircrft-logo"
-                  class="avatar-img rounded-circle border border-4 border-body">
+                <!-- Avatar -->
+                <div class="avatar avatar-xxl header-avatar-top">
+                  <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle border border-4 border-body">
+                </div>
+
               </div>
+              <div class="col mb-3 ml-n3 ml-md-n2">
 
-            </div>
-            <div class="col mb- 3 ml-n3 ml-md-n2">
-
-              <!-- Pretitle go live 
-              <h6 class="header-pretitle">
-                 Uplift & rise together
-              </h6> -->
-              
-              <!-- Pretitle updated d163 
-              <h6 class="header-pretitle">
-                 HUMAN CURATED | AI MANAGED 
-              </h6> -->
-
-              <!-- Pretitle updated d146 
-              <h6 class="header-pretitle">
-                 FOUNDER CURATED | AI MANAGED 
-              </h6> -->
-              
-              <!-- Pretitle updated d121-2020 -->
-              <h6 class="header-pretitle">
-                 FOUNDER CURATED APPS & TECH STACKS 
-              </h6> 
-              
-              <!-- Pretitle updated d137 
-              <h6 class="header-pretitle">
-                 APPS | API'S | CODE | CLOUD | FRAMEWORKS | PLATFORMS | SITES | SERVICES
-              </h6> -->
-              
-              <!-- Pretitle updated d151 
-              <h6 class="header-pretitle">
-                 FOUNDER CURATED STACK | AI MANAGED INFRASTRUCTURE
-              </h6> -->
-              
-              <!-- Pretitle updated d151 
-              <h6 class="header-pretitle">
-                 FOUNDER CURATED APPS | AI MANAGED CLOUD
-                 
-              </h6> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Startups empowering startups
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Welcome to Startup's Marketplace
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                The Startup's Marketplace
-              </h1> -->
-              
-              <!-- Title Updated d131-2020 Chai Forest Approved
-              <h1 class="header-title">
-                Startup's Marketplace
-              </h1> -->
-              
-              <!-- Title Updated d131-2020 Chai Forest Approved 
-              <h1 class="header-title">
-                Startup Store
-              </h1> -->
-              
-              <!-- Title Updated d131-2020 Chai Forest Approved -->
-              <h1 class="header-title">
-                Startup Shop
-              </h1>
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Startup App Store
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Supercharges your startup
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Uplifts your startup
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                aircrft startup engine
-              </h1> -->
-              
-              <!-- Title d156 good! 
-              <h1 class="header-title">
-                AIRCRFT/engine
-              </h1> -->
-              
-              <!-- Title d140 
-              <h1 class="header-title">
-                Puts 🔥 into Your Startup
-              </h1> -->
-              
-              <!-- Title d138 
-              <h1 class="header-title">
-                Solving the problem of problem-solving -->
+                <!-- Pretitle 
+                <h6 class="header-pretitle">
+                  FINALLY, EVERYTHING YOU NEED TO LAUNCH YOUR STARTUP FROM ONE SPOT.
+                </h6> -->
                 
-              <!-- Title d154 
-              <h1 class="header-title">
-                Startup's App Store
-              </h1> -->
-              
-              <!-- Title d154 
-              <h1 class="header-title">
-                FOUNDER CURATED | AI MANAGED
-              </h1> -->
-              
-              <!-- Title d135/2020 Created & Coded by Chai Forest 
-              <h1 class="header-title">
-                Startup Stack Store
-              </h1> -->
-              
-              <!-- Title d135 ? 
-              <h1 class="header-title">
-                Startup's Stack Store
-              </h1> -->
-              
-              <!-- Title d135 ? 
-              <h1 class="header-title">
-                The Startup Stacks Store
-              </h1> -->
-              
-              <!-- Title d154 
-              <h1 class="header-title">
-                Passion 🔥 + Purpose Platform
-              </h1> -->
-              
-              <!-- Title d153
-              <h1 class="header-title">
-                Work together seamlessly with effortless effort. 
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Puts Superpowers into Your Startup
-              </h1> -->
-              
-              <!-- Title 
-              <h1 class="header-title">
-                Injects rocket fuel into your business.
-              </h1> -->
+                <!-- Pretitle 
+                <h6 class="header-pretitle">
+                  Launch, grow, scale. Everything in one spot.
+                </h6> -->
+                
+                <!-- Pretitle 11-5-2020 
+                <h6 class="header-pretitle">
+                  Founder curated apps & no-code tech stacks
+                </h6> -->
+                
+                <!-- Pretitle 11-08-2020 
+                <h6 class="header-pretitle">
+                  Convergence of exponential technologies
+                </h6> -->
+                
+                <!-- Pretitle 11-7-2020 
+                <h6 class="header-pretitle">
+                  Moonshot LaunchPad + Marketplace for Startups
+                </h6> -->
+                
+                <!-- Pretitle 11-7-2020 
+                <h6 class="header-pretitle">
+                  Startup LaunchPad > Moonshot Marketplace
+                </h6> -->
+                
+                <!-- Pretitle 
+                <h6 class="header-pretitle">
+                  (V2 Logline) FINALLY, EVERYTHING YOU NEED TO LAUNCH, GROW, & SCALE YOUR STARTUP IN ONE SPOT!
+                </h6> -->
+                
+                <!-- Pretitle Update by Chai Forest 11.15.2020 
+                <h6 class="header-pretitle">
+                  EVERYTHING YOU NEED TO LAUNCH, GROW, & INFINIETLY SCALE YOUR STARTUP
+                </h6> -->
+                
+                <!-- Pretitle 
+                <h6 class="header-pretitle">
+                  SOLVING THE PROBLEM OF PROBLEM-SOLVING
+                </h6> -->
+                
+                <!-- Pretitle 
+                <h6 class="header-pretitle">
+                  Founder curated no-code Apps & Tech Stacks.
+                </h6> -->
+                
+                <!-- Pretitle 
+                <h6 class="header-pretitle">
+                  Founder Curated | AI Managed
+                </h6> -->
+                
+                <!-- Pretitle 
+                <h6 class="header-pretitle">
+                  Founder Curated Apps & Tech Stacks | AI Managed Backend Cloud Infrastructure
+                </h6> -->
+                
+                <!-- Pretitle | Logline Option #2 | by Chai Forest | 11-16-2020 -->
+                <h6 class="header-pretitle">
+                  Convergence of exponential technologies
+                </h6>
+                
+                <!-- Pretitle | Logline Option #2 | by Chai Forest | 12.2.2020 
+                <h6 class="header-pretitle">
+                  Curated Convergence of exponential moonshots startups and solutions
+                </h6> -->
+                
+                <!-- Pretitle | Logline Option #2 | by Chai Forest | 12.2.2020 
+                <h6 class="header-pretitle">
+                  Curated Convergence of moonshot solutions
+                </h6> -->
+                
+                <!-- ⭐️ Pretitle | Logline Option #1 | by Chai Forest | 11-16- 2020 chai@aircrft.com 
+                <h6 class="header-pretitle">
+                  LAUNCH, GROW, & INFINIETLY SCALE ON DAY 0
+                </h6> -->
 
-            </div>
-            <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+                <!-- Title 
+                <h1 class="header-title">
+                  Startups supporting startups
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  Start your startup, with one stack.
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  Start your startup, with one tap, problem included.
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  Founder curated apps and tech stacks | AI managed infrastructure
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  Founder curated apps & tech stacks
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  Start a startup.
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  Start your startup
+                </h1> -->
+                
+                <!-- Title 10-10-2020
+                <h1 class="header-title">
+                  Startup App Store
+                </h1> -->
+                
+                <!-- Title 11-04-2020 
+                <h1 class="header-title">
+                  The Startup Store | Founder Curated Apps & Tech Stacks
+                </h1> -->
+                
+                <!-- Title 11-04-2020 
+                <h1 class="header-title">
+                  Startup Store | Founder curated Apps & Stacks
+                </h1> -->
+                
+                <!-- Title 11-04-2020 
+                <h1 class="header-title">
+                  Startup Store
+                </h1> -->
+                
+                <!-- Title 11-04-2020 
+                <h1 class="header-title">
+                  The Startup Store 
+                </h1> -->
+                
+                <!-- Title 11-04-2020 
+                <h1 class="header-title">
+                  Moonshot Marketplace 
+                </h1> -->
+                
+                <!-- ⭐️ Title | Update by Chai Forest 11.16.2020 chai@aircrft.com    
+                <h1 class="header-title">
+                  Moonshot Marketplace & Launchpad
+                </h1> -->
+                
+                <!-- ⭐️ Title | Update by Chai Forest 11.23.2020 chai@aircrft.com 
+                <h1 class="header-title">
+                  Welcome to Aircrft. Empowering the future now!
+                </h1> 
+                
+                <!-- ⭐️ Title | Update by Chai Forest 11.23.2020 chai@aircrft.com 
+                <h1 class="header-title">
+                  Welcome to Aircrft. Empowering the future now!
+                </h1> -->
+                
+                <!-- ⭐️ Title | Update by Chai Forest 12.1.2020 | chai@aircrft.com 
+                <h1 class="header-title">
+                  Moonshot Marketplace
+                </h1> -->
+                
+                <!-- ⭐️ Title | Update by Chai Forest 11.23.2020 chai@aircrft.com    
+                <h1 class="header-title">
+                  Puts the exponential future into your startup now
+                </h1> -->
+                            
+                <!-- ⭐️ Title | Update by Chai Forest 11.23.2020 chai@aircrft.com    
+                <h1 class="header-title">
+                  Welcome to mind like water
+                </h1> -->
+                
+                
+                <!-- Title 11-08- 2020 
+                <h1 class="header-title">
+                  Startup Stack Store / Moonshot Launch Pad 
+                </h1> -->
+                
+                <!-- Title 12-@7-2020 
+                <h1 class="header-title">
+                  Startup Stack Store
+                </h1> -->
+                
+                <!-- Title 12-@7-2020 -->
+                <h1 class="header-title">
+                  Welcome
+                </h1> 
+                
+                
+                <!-- Title 11-04-2020 
+                <h1 class="header-title">
+                  Startup Supplies & Moonshot Marketplace
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  Start your startup
+                </h1> -->
+                
+                <!-- Title 
+                <h1 class="header-title">
+                  The Startup Store
+                </h1> -->
+                
+              </div>
+              <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
 
-              <!-- Button 
-                <a href="#!" class="btn btn-primary d-block d-md-inline-block lift">
-                  Access aircrft
-                </a> -->
-
-              <!-- Button 
-                <a href="modal-founders-feed-2.html!" class="btn btn-primary d-block d-md-inline-block lift">
-                  Request aircrft invite
+                <!-- Button 
+                <a href="#!" class="btn btn-primary d-block d-md-inline-block lift i class="fe fe-feather">
+                  Explore
                 </a> -->
                 
-              <!-- Button 
-                <a href="https://startups.aircrftengine.com/ghost/#/signin" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
-                  Join AIRCRFT
-                </a> -->
-                
-              <!-- Button 
-                <a href="https://aircrft.com/iframe-ghost-start-engine.html" class="btn btn-primary d-block d-md-inline-block lift"> <i class="fe fe-sliders mr-2"></i>
-                  Join AIRCRFT
-                </a> -->
-                
-              <!-- Button 
-              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> Start free trial
-              </a> -->
+              <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
               
-              <!-- Button 
-              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> Deploy Your AIRCRFT
-              </a> -->
-              
-              <!-- Button 
-              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-feather mr-2"></i> LIFETIME UNLIMITED
-              </a> -->
-              
-              <!-- Button live update update d127 -->
-              <a href="#modal-shop-121-20" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-feather mr-2"></i> Explore
+               <!-- Button "Explore" Modal #03 | Updatd by Chai Forest 11.21.2020 -->
+               <a href="#modalKanbanTaskProduction" class="btn btn-dark d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> Join
               </a>
-              
-              <!-- Button d141 Update Launch Now 
-              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> LAUNCH NOW
+
+              </div> 
+                
+              <!-- Button 11.5.2020
+              <a href="#modalKanbanTaskProduction" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> Launch Your Moonshot 
               </a> 
               
-              <a href="#modalStartupSpotlight" class="btn btn-white d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> DISCOVER STARTUPS
+              <!-- Button What's a Moonshot FAQ Top Pop ou Modal #03 | Updatd by Chai Forest 11.11.2020 
+              <a href="#modalKanbanTaskProduction" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> What is a moonshot? 
+              </a> -->
+              
+              <!-- Button What's a Moonshot FAQ Top Pop ou Modal #03 | Updatd by Chai Forest 11.11.2020 
+              <a href="#modalKanbanTaskProduction" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> DEPLOY MOONSHOT STACK 
+              </a> -->
+              
+              <!-- Button "Startup Stack Store" Modal #03 | Updatd by Chai Forest 11.21.2020 
+              <a href="#modalKanbanTaskProduction" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> Startup Stack Store 
               </a>
               
-              <!-- Button Test Explore Stacks 
+              <!-- Button 11.7.2020
+              <a href="#modalKanbanTaskProduction" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> What's a moonshot? 
+              </a> -->
               
-              <a href="#modalStartupSpotlight" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> EXPLORE STACKS
+              <!-- Button
+              <a href="#modalKanbanTaskProduction" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> Explore Apps, Stacks, & Moonshots
+              </a> -->
+              
+              <!-- Button live d119 YC Build Sprint Day #11 
+              <a href="#modalKanbanTaskProduction" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> Start Your Startup Stack
+              </a> -->
+                <!-- Button 
+                <a class="btn btn-primary d-block d-md-inline-block lift" data-target="#modalKanbanTask" <i class="fe fe-feather mr-2"></i> Explore 
+              </a> -->
+
+              </div>
+              <!-- <div class="col-12 col-md-auto mt-2 mt-md-0 mb-md-3">
+              
+               Button "Moonshot Market" Modal #03 | Updatd by Chai Forest 11.21.2020 
+              <a href="#modalKanbanTaskProduction" class="btn btn-white d-block d-md-inline-block lift" data-toggle="modal">
+                <i class="fe fe-feather mr-2"></i> Moonshot Marketplace
               </a>
 
-              <button class="btn btn-rounded-circle btn-primary">
-              <span class="fe fe-star"></span>
-              </button> -->
-              
-              <!-- Button d141 Update Launch Now 
-              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> LAUNCH NOW
-              </a> -->
-              
-              <!-- Button 
-              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> LAUNCH IGNITION SEQUENCE
-              </a> -->
-              
-              <!-- Button 
-              <a href="#modalPricing" class="btn btn-primary d-block d-md-inline-block lift" data-toggle="modal">
-                <i class="fe fe-sliders mr-2"></i> ACTIVATE AIRCRFT
-              </a> 
+              </div> -->
+            </div> <!-- / .row -->
+            <div class="row align-items-center">
+              <div class="col">
 
-              <!-- All-access Pass 5.7.2020 Button 
-              <a href="#modalAllAccessPass1" class="btn btn-primary d-block d-md-inline-block lift">
-                Memberships
-              </a> -->
-
-            </div>
-          </div> <!-- / .row -->
-
-          <div class="row align-items-center">
-            <div class="col">
-
-              <!-- Nav 
+                <!-- Nav 
                 <ul class="nav nav-tabs nav-overflow header-tabs">
                   <li class="nav-item">
                     <a href="profile-posts.html" class="nav-link active">
-                      Stack #1 | MVP Launch Kit
-                    </a>
-                  </li> -->
-                  <!-- <li class="nav-item">
-                    <a href="profile-groups.html" class="nav-link">
-                      Discover Startups
+                      MVP Stack
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a href="profile-projects.html" class="nav-link">
-                      Apps
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="profile-files.html" class="nav-link">
-                      API's
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="profile-subscribers.html" class="nav-link">
-                      Customers
-                    </a>
-                  </li> 
                 </ul> -->
 
+              </div>
             </div>
-          </div>
-        </div> <!-- / .header-body -->
+          </div> <!-- / .header-body -->
 
+        </div>
       </div>
-    </div>
 
-    <!-- AIRCRFT PLATFORM POST FEED aircrft-platform-post-126-2020.png -->
+    <!-- AIRCRFT Platform Posts Update 11.05.2020 | Chai Forest | chai@aircrft.com -->
     <div class="@@if(navPosition=='sidenav'||navPosition=='combo'){container-fluid}@@if(navPosition=='topnav'){container}">
       <!-- div class="row justify-content-center">
         <div class="col-12 col-xl-8"> -->
-         
-          <!-- AIRCFT MTP Post 121-2020 -->
+          
+          
+          <!-- ⭐️⭐️ AIRCFT Post #02 | Welcome to the convergence of exponential technologies | Updated 11.10.2020 | Chai Forest -->
           <div class="card">
             <div class="card-body">
               
@@ -390,8 +379,8 @@
                   <div class="col-auto">
                    
                     <!-- Avatar -->
-                    <a href="founder-profile-chai-forest.html" class="avatar">
-                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="Captain of Moonshoots" class="avatar-img rounded-circle">
+                    <a href="index.html" class="avatar">
+                      <img src="assets/img/avatars/icons/aircrft-engine.jpg" alt="AIRCRFT Founder Curated Apps and Tech Stacks" class="avatar-img rounded-circle">
                     </a>
 
                   </div>
@@ -399,12 +388,11 @@
 
                     <!-- Title -->
                     <h4 class="card-title mb-1">
-                      MTP
+                      CHAI FOREST
                     </h4>
                               <!-- Time -->
-                    <p class="card-text small text-muted">Massive Transformitive Purpose
-                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">37 mins ago
-                        | Day 121-20</time>
+                    <p class="card-text small text-muted">Captain of Moonshots
+                      <!-- <span class="fe fe-clock"></span> time datetime="2018-05-24">Day 120-20 | Post 3 of 7</time> -->
                     </p>
 
                   </div>
@@ -414,16 +402,16 @@
                 </div> <!-- / .row -->
               </div>
                   
-              <!-- Image aircrft-mtp.png -->
+              <!-- ⭐️⭐️ AIRCRFT Post Image #02 | Welcome to the convergence of exponential technologies aircrft-posts-this-one-11-16-2020.png -->
               <p class="text-center mb-3">
-                <img src="assets/img/posts/aircrft-mtp.png" alt="aircrft-mtp"
+                <img src="assets/img/posts/aircrft-p03-welcome-to-the-convergence-11-10-2020.png" alt="Welcome to the convergence of exponential technologies" 
                   class="img-fluid rounded">
               </p>
               
             </div>
-         </div>
-        
-          <!-- Post #1 AIRCFT Platform Post Thrusday August 13 2020 d140 11:37am aircrft-mtp-d140.png -->
+          </div>
+          
+          <!-- ⭐️ AIRCFT Post #01 | Launch, grow, & infinitely scale your startup from day zero | Updated 11.10.2020 | Chai Forest -->
           <div class="card">
             <div class="card-body">
               
@@ -433,7 +421,93 @@
                   <div class="col-auto">
                    
                     <!-- Avatar -->
-                    <a href="founder-profile-chai-forest.html" class="avatar">
+                    <a href="index.html" class="avatar">
+                      <img src="assets/img/avatars/icons/aircrft-engine.jpg" alt="AIRCRFT Founder Curated Apps and Tech Stacks" class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      CHAI FOREST
+                    </h4>
+                              <!-- Time -->
+                    <p class="card-text small text-muted">Captain of Moonshots
+                      <!-- <span class="fe fe-clock"></span> time datetime="2018-05-24">Day 120-20 | Post 3 of 7</time> -->
+                    </p>
+
+                  </div>
+                  <div class="col-auto">
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+                  
+              <!-- ⭐️ AIRCRFT Post Image #01 | Launch, grow, & infinitely scale 
+your startup from day zero| aircrft-posts-this-one-11-16-2020.png -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/aircrft-posts-this-one-11-16-2020.png" alt="Launch, grow, & infinitely scale 
+your startup from day zero" 
+                  class="img-fluid rounded">
+              </p>
+              
+            </div>
+          </div>
+         
+          <!-- ⭐️⭐️⭐️⭐️ AIRCFT Platform Post #04 | Aircrft is where startups bring their 10x Moonshot technology solutions to market | 11.10.2020 | Chai Forest -->
+          <div class="card">
+            <div class="card-body">
+              
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                   
+                    <!-- Avatar -->
+                    <a href="index.html" class="avatar">
+                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="Purpose" class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      AIRCRFT
+                    </h4>
+                              <!-- Time -->
+                    <p class="card-text small text-muted">Moonshot Marketplace & Launchpad
+                      <!-- <span class="fe fe-clock"></span> <time datetime="2018-05-24"> Post 2 of 7</time> -->
+                    </p>
+
+                  </div>
+                  <div class="col-auto">
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+                  
+              <!-- ⭐️⭐️⭐️⭐️ AIRCRFT Post #04 | Aircrft is where startups bring their 10x Moonshot technology solutions to market. -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/aircrft-p02-10x-moonshot-solutions-to-market-11-10-2020.png" alt="Aircrft is where startups bring their 10x Moonshot technology solutions to market."
+                  class="img-fluid rounded">
+              </p>
+              
+            </div>
+          </div>
+        
+          <!-- ⭐️⭐️⭐️⭐️⭐️ AIRCRFT | Platform Post #05 | Solving the problem of problem-solving | Updated 11.10.2020 | Chai Forest -->
+          <div class="card">
+            <div class="card-body">
+              
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                   
+                    <!-- Avatar -->
+                    <a href="index.html" class="avatar">
                       <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="Chai Forest" class="avatar-img rounded-circle">
                     </a>
 
@@ -442,12 +516,11 @@
 
                     <!-- Title -->
                     <h4 class="card-title mb-1">
-                      Chai Forest
+                      AIRCRFT
                     </h4>
                               <!-- Time -->
-                    <p class="card-text small text-muted">Pilot
-                      <span class="fe fe-clock"></span> <time datetime="2018-05-24">3 hrs ago
-                        | Day 121-20</time>
+                    <p class="card-text small text-muted">Moonshot Marketplace & Launchpad
+                      <!-- <span class="fe fe-clock"></span> <time datetime="2018-05-24">Day 119-20 | Post 1 of 7</time> -->
                     </p>
 
                   </div>
@@ -457,29 +530,146 @@
                 </div> <!-- / .row -->
               </div>
                   
-              <!-- Image aircrft-platform-post-startup-4-week-goals-132-2020.png -->
+              <!-- ⭐️⭐️⭐️⭐️⭐️ AIRCRFT Post Image #05 | Solving the problem of problem-solving -->
               <p class="text-center mb-3">
-                <img src="assets/img/posts/aircrft-post-121-2020.png" alt="aircrft-post-121-2020"
+                <img src="assets/img/posts/aircrft-p8-solvingtheproblemofproblem-solving-11-10-2020.png" alt="Solving the problem of problem-solving"
                   class="img-fluid rounded">
               </p>
               
             </div>
-         </div>
-        
-        <!-- CONTENT tv.aircrft.com iframe updated d167 
-          <div class="row">
-            <div class="col-12">
+          </div>
+          
+          <!-- ⭐️⭐️⭐️ AIRCRFT | Platform Post #03 | AIRCRFT PUTS MIND LIKE WATER INTO YOUR Startup | 11.22.2020 | Chai Forest -->
+          <div class="card">
+            <div class="card-body">
+              
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                   
+                    <!-- Avatar -->
+                    <a href="index.html" class="avatar">
+                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="Chai Forest" class="avatar-img rounded-circle">
+                    </a>
 
-              <div class="embed-responsive embed-responsive-1by1">
-                <iframe class="embed-responsive-item" src="https://tv.aircrft.com" allowfullscreen></iframe>
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      AIRCRFT
+                    </h4>
+                              <!-- Time -->
+                    <p class="card-text small text-muted">Moonshot Marketplace & Launchpad
+                      <!-- <span class="fe fe-clock"></span> <time datetime="2018-05-24">Day 119-20 | Post 1 of 7</time> -->
+                    </p>
+
+                  </div>
+                  <div class="col-auto">
+
+                  </div>
+                </div> <!-- / .row -->
               </div>
-  
-            </div>   
-          </div> -->
+                  
+              <!-- ⭐️⭐️⭐️ AIRCRFT Post Image #03 | AIRCRFT PUTS MIND LIKE WATER INTO YOUR Startup -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/aircrft-p3-mind-like-water-11-22-2020.png" alt="AIRCRFT PUTS MIND LIKE WATER INTO YOUR Startup"
+                  class="img-fluid rounded">
+              </p>
+              
+            </div>
+          </div>
+          
+          <!-- ⭐️⭐️⭐️⭐️⭐️⭐️ AIRCRFT | Platform Post #06 | Are you working on something that can change the world? | Updated 11.10.2020 | Chai Forest -->
+          <div class="card">
+            <div class="card-body">
+              
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                   
+                    <!-- Avatar -->
+                    <a href="index.html" class="avatar">
+                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="Chai Forest" class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      AIRCRFT
+                    </h4>
+                              <!-- Time -->
+                    <p class="card-text small text-muted">Moonshot Marketplace & Launchpad
+                      <!-- <span class="fe fe-clock"></span> <time datetime="2018-05-24">Day 119-20 | Post 1 of 7</time> -->
+                    </p>
+
+                  </div>
+                  <div class="col-auto">
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+                  
+              <!-- ⭐️⭐️⭐️⭐️⭐️⭐️ AIRCRFT Post Image #06 | Are you working on something that can change the world? -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/aircrft-p05-change-the-world-11-05-2020.png" alt="Are you working on something that can change the world?"
+                  class="img-fluid rounded">
+              </p>
+              
+            </div>
+          </div>
+          
+          <!-- ⭐️⭐️⭐️⭐️⭐️⭐️⭐️ AIRCRFT | Platform Post #07 | What's Your Moonshot? | 11.05.2020 | Chai Forest -->
+          <div class="card">
+            <div class="card-body">
+              
+              <!-- Header -->
+              <div class="mb-3">
+                <div class="row align-items-center">
+                  <div class="col-auto">
+                   
+                    <!-- Avatar -->
+                    <a href="index.html" class="avatar">
+                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="Chai Forest" class="avatar-img rounded-circle">
+                    </a>
+
+                  </div>
+                  <div class="col ml-n2">
+
+                    <!-- Title -->
+                    <h4 class="card-title mb-1">
+                      AIRCRFT
+                    </h4>
+                              <!-- Time -->
+                    <p class="card-text small text-muted">Moonshot Marketplace & Launchpad
+                      <!-- <span class="fe fe-clock"></span> <time datetime="2018-05-24">Day 119-20 | Post 1 of 7</time> -->
+                    </p>
+
+                  </div>
+                  <div class="col-auto">
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+                  
+              <!-- ⭐️⭐️⭐️⭐️⭐️⭐️⭐️ AIRCRFT Post Image #07 | What's Your Moonshot? -->
+              <p class="text-center mb-3">
+                <img src="assets/img/posts/aircrft-p01-whats-your-moonshot-11-05-2020.png" alt="AIRCRFT WHAT'S YOUR MOONSHOT"
+                  class="img-fluid rounded">
+              </p>
+              
+            </div>
+          </div>
+
 
         </div>
       </div>
-
+      
+      
     </div>
 
 
